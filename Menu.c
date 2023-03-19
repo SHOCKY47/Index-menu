@@ -13,13 +13,6 @@
 
 typedef struct
 {
-    int speed;
-} app_config;
-
-app_config config = {10};
-
-typedef struct
-{
     int menu_id;                                        // 菜单索引号
     char menu_name[30];                                 // 菜单显示名称
     void (*menu_action)(float32 *param, char name[30]); // 子菜单执行函数
